@@ -1,0 +1,34 @@
+<h1 class="center">Movable Box Project</h1>
+
+<!-- <script>
+function selectText() {
+  const input = document.getElementById('text-box');
+  input.focus();
+  input.select();
+}
+
+</script> -->
+
+
+<!-- <div class="box" id="box appMovable onclick="selectText()">
+  Box
+</div> -->
+
+<div class="area" appMovableArea>
+  <div class="box" appMovable *ngFor="let trapped of Boxes; index as i" >
+    {{ trapped }} {{' '}} {{i+1}}
+  </div>
+</div>
+
+<button (click)="add()">Add</button>
+
+
+<!-- <h2>Keyboard Event</h2>
+
+<div class="container" >
+  <div class="cell" *ngFor="let trapped of Cells; let i=index" >
+    {{ trapped }} {{' '}} {{i}}
+  </div>
+</div>
+
+<button (click)="addCell()">Add</button> -->
